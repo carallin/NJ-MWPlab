@@ -377,7 +377,7 @@ section {
 }
 .aside .aside-list2 li > a{
   padding: 10px 0 10px 10px;
-  background: url(../images/list.gif) no-repeat 0 20px;
+  background: url(../static/images/list.gif) no-repeat 0 20px;
 }
 .aside li:hover {
   color: #632363;
@@ -423,7 +423,7 @@ section {
   padding: 10px;
 }
 .news-lists a {
-  background: url(../images/list.gif) no-repeat 10px 22px;
+  background: url(../static/images/list.gif) no-repeat 10px 22px;
   display: block;
   color: #333;
   text-decoration: none;

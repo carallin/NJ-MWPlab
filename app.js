@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 var router = require('./routes/index');
 
-app.set('views', __dirname + '/public/html');
+app.set('views', __dirname + '/src/html');
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 
@@ -15,7 +15,9 @@ app.set('view engine', 'html');
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname +'/public'));
+// app.use(express.static(__dirname +'/dist'));  //生产模式
+app.use(express.static(__dirname +'/src'));  //开发模式
+app.use('/static', express.static(__dirname +'/public'));
 
 app.use('/',router);
 
