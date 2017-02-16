@@ -17,6 +17,11 @@ router.get('/achievements',function(req, res) {
 router.get('/about', function (req, res) {
     res.render('about');
 });
+
+router.get('/news/:newsNum',function(req, res) {
+    res.render(req.params.newsNum);
+});
+
 router.get('/about/:name', function (req, res) {
     res.send('about' + req.params.name);
 });

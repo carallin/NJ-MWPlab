@@ -18,6 +18,9 @@ gulp.task('html', function () {
     gulp.src('src/html/*.html') // 要压缩的html文件
     .pipe(minifyHtml()) //压缩
     .pipe(gulp.dest('dist/html'));
+    gulp.src('src/articles/*.html') // 要压缩的html文件
+    .pipe(minifyHtml()) //压缩
+    .pipe(gulp.dest('dist/articles'));
 });
 
 
