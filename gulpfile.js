@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('css', function () {
     gulp.src('src/stylesheets/*.css')  //要合并的文件
-    .pipe(concat('style.css'))  // 合并匹配到的js文件并命名为 "all.js"
+    .pipe(concat('style.css'))  // 合并匹配到的js文件
     .pipe(minifyCss()) //压缩css
     .pipe(gulp.dest('dist/stylesheets'));
     gulp.src('src/icons/**')  //要合并的文件
