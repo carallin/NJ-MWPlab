@@ -32,3 +32,5 @@ gulp.task('js', function () {
     gulp.src('!src/js/jquery*.js') // 要压缩的js文件
     .pipe(gulp.dest('dist/js')); //压缩后的路径
 });
+
+gulp.task('mytask',['css','js','html']);
